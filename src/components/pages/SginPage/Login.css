@@ -1,0 +1,184 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 100px;
+    >.loginTitle{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px;
+        h2{
+            font-size: 32px;
+            font-weight: 500;
+        }
+        p{
+            color: #59595A;
+            width: 500px;
+            margin-top: 10px;
+        }
+        .loginTitleText{
+            margin-top: 40px;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 12px;
+            p{
+                width: 500px;
+                padding: 20px;
+            }
+            >.todo{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin-top: 10px;
+                background-color: #FCFCFD;
+                padding: 10px 0;
+                width: 100%;
+                gap: 150px;
+                border-bottom-right-radius: 12px;
+                border-bottom-left-radius: 12px;
+                >span{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    h5{
+                        font-size: 18px;
+                    }
+                }
+                >button{
+                    padding: 10px 14px;
+                    border-radius: 8px;
+                    border: 1px solid var(--White-95, #F1F1F3);
+                    background: var(--White-97, #F7F7F8);
+                    border: 0;
+                    outline: none;
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        background-color: #FF9500;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        >.selectBtn{
+            display: flex;
+            gap: 10px;
+            margin-left: 71%;
+            margin-top: 10px;
+            
+        }
+    }
+
+    >.LoginForm{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 12px;
+        gap: 20px;
+        padding: 30px;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            transform: scale(110%);
+            box-shadow: 5px -5px 40px 5px #000;
+        }
+        >h2{
+            font-size: 35px;
+        }
+        >p{
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        >form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+            >label{
+                display: flex;
+                flex-direction: column;
+                font-size: 18px;
+                gap: 10px;
+                color: #000;
+                font-weight: 800;
+                >input{
+                    padding: 15px;
+                    width: 100%;
+                    border: 0;
+                    outline: none;
+                    border-radius: 10px;
+                    border: 1px solid var(--White-95, #F1F1F3);
+                    background: var(--White-99, #FCFCFD);
+                }
+            }
+            >.chack{
+                display: flex ;
+                flex-direction: row;
+                input{
+                    width: 30px;
+                }
+            }
+            >button{
+                padding: 10px 20px;
+                background-color: #FF9500;
+                color: #fff;
+                font-size: 20px;
+                border: 0;
+                outline: none;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+            }
+            >.orLine{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                >hr{
+                    background-color: #59595A;
+                    border: 0;
+                    width: 50%;
+                    height: 1px;
+                }
+                h3{
+                    color: #98989A;
+                }
+            }
+            >.linkGoogle{
+                background-color: #F7F7F8;
+                color: #000;
+            }
+            >a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                text-decoration: none;
+                color: #000;
+            }
+        }
+    }
+}
+
+@media (max-width: 1078px) {
+    .loginTitle{
+        width: 450px;
+    }
+    .loginTitleText p{
+        width: 350px !important;
+    }
+
+    .LoginForm{
+        width: 400px;
+    }
+}
+@media (max-width:768px) {
+    .login{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

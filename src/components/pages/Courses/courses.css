@@ -1,0 +1,113 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    gap:100px;
+}
+
+
+.aboutHero{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    >h2{
+        font-family: "Be Vietnam Pro";
+        font-size: 48px;
+        font-style: normal;
+        width: 600px;
+        font-weight: 600;
+        line-height: 150%; 
+    }
+    >p{
+        width: 500px;
+    }
+
+}
+.desgin{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    >.desginText{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        >.desginTitle{
+            >h5{
+                font-size: 20px;
+            }
+            >p{
+                font-size: 18px;
+                width: 1000px;
+                margin-top: 20px;
+            }
+        }
+        >button{
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid var(--White-95, #F1F1F3);
+            background: var(--White-99, #FCFCFD);
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                background-color: #FF9500;
+                color: #fff;
+            }
+        }
+    }
+    >.aboutImg{
+        margin-top: 20px;
+        >div{
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            >img{
+                width: 430px;
+            }
+        }
+        >.aboutTitle{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            >.aboutImg-text{
+                display: flex;
+                gap: 20px;
+            }
+        }
+    }
+
+    >.static{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 50px;
+        padding-bottom: 20px;
+        >ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-top: 20px;
+            border-radius: 12px;
+            background: var(--Absolute-White, #FFF);
+            >li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                >h2{
+                    font-size: 50px;
+                }
+                >p{
+                    font-size: 20px;
+                }
+            }
+            >hr{
+                border: 0;
+                width: 5px;
+                background-color: #F1F1F3;
+            }
+        }
+    }
+}
